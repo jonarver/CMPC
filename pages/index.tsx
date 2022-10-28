@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import { Card, CardContent, CardHeader, Grid } from '@mui/material';
 
 import { Layout } from '../components/layouts';
-import { ComboBox, StandardImageList} from '../components/ui';
+import { Filter, StandardImageList} from '../components/ui';
 
 const HomePage: NextPage = () => {
 
@@ -18,7 +18,7 @@ const HomePage: NextPage = () => {
       
       <Grid container spacing={ 2 }>
         <Grid item xs={ 12 } sm={ 4 }> 
-          <ComboBox setDataImagesBreeds={setDataImagesBreeds}/>
+          <Filter setDataImagesBreeds={setDataImagesBreeds}/>
         </Grid>
 
         <Grid item xs={ 12 } sm={ 4 }> 

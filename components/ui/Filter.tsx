@@ -10,7 +10,7 @@ import { stepButtonClasses, Typography } from '@mui/material';
  * @ComboBox
  */
 
-export const ComboBox = (props) => {
+export const Filter = (props) => {
   /**
  * State.
  */
@@ -100,6 +100,9 @@ export const ComboBox = (props) => {
       if (value.length>0) {
         setIsSubBreeds(false)
         formatDataSubBreeds(value)
+      }else{
+        setValueSubBreeds('Select')
+        setIsSubBreeds(true)
       }
      }
     }    

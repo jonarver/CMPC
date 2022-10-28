@@ -39,7 +39,6 @@ export const ComboBox = (props) => {
  * @param {obj} 
  */
   const formatDataBreeds = (obj:{data:{message:{}}}) => {
-    console.log("breeds=========",obj.data.message);
     let arr:[{}] = [
       { label: 'Select'}
     ]
@@ -94,9 +93,7 @@ export const ComboBox = (props) => {
   const subBreedsOpt = (newInputValue: {'label':string}|null) => {
     let arr:[{}] = [
       { label: 'SubBreeds'}
-    ]
-    console.log("optionsBreeds",breeds);
-    
+    ]    
     setDisabledButom(false)    
     for(const [key, value] of Object.entries(breeds.data.message)){      
      if (newInputValue?.label===key) {

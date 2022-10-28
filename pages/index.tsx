@@ -14,7 +14,7 @@ const HomePage: NextPage = () => {
 
 
   return (
-    <Layout title='Home - OpenJira'>
+    <Layout title='Home - CMPC'>
       
       <Grid container spacing={ 2 }>
         <Grid item xs={ 12 } sm={ 4 }> 
